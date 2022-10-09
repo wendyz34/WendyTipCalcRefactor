@@ -14,6 +14,7 @@ public class TipCalculator {
 
     public double getTotalBillBeforeTip() {
         return totalBillBeforeTip;
+
     }
 
     public double getTipPercentage() {
@@ -29,7 +30,7 @@ public class TipCalculator {
 
     public void totalBill() {
         double totalBill = ((totalBillBeforeTip + (totalBillBeforeTip * (tipPercentage * 0.01))));
-        System.out.println( "Total Bill Before Tip: " + totalBill);
+        System.out.println( "Total Bill: " + totalBill);
     }
 
     public void getPerPersonTipAmount() {
