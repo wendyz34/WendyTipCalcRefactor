@@ -23,7 +23,7 @@ public class TipCalculator {
 
 
     public void getTipAmount() {
-        double tipAmount = ((tipPercentage * 0.01) );//* totalBillBeforeTip
+        double tipAmount = (((tipPercentage * 0.01) )* totalBillBeforeTip);
         System.out.println("Tip Amount: " + tipAmount);
     }
 
@@ -33,13 +33,12 @@ public class TipCalculator {
     }
 
     public void getPerPersonTipAmount() {
-        double perPersonTipAmount = ((totalBillBeforeTip * (tipPercentage * 0.01)));
+        double perPersonTipAmount = ((totalBillBeforeTip * (tipPercentage * 0.01)/numPeople));
         System.out.println("Tip Per Person: " + perPersonTipAmount);
     }
 
     public void getPerPersonTotalCost() {
-        double perPersonTotalCost =50;
+        double perPersonTotalCost =((totalBillBeforeTip * (tipPercentage * 0.01) / numPeople) + (totalBillBeforeTip / numPeople));
         System.out.println( "Total Cost Per Person: " + perPersonTotalCost);
     }
 }
-//((totalBillBeforeTip * (tipPercentage * 0.01) / numPeople) + (totalBillBeforeTip / numPeople));

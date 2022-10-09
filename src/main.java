@@ -10,10 +10,10 @@ public class main {
         System.out.println("What's the tip percentage");
         int tipPercentage = scan.nextInt();
         TipCalculator info = new TipCalculator(numPeople,tipPercentage);
-        info.getTotalBillBeforeTip();
+        info.totalBill();
         System.out.println( "Tip Percentage:" + info.getTipPercentage());
-        info.getPerPersonTipAmount();
         info.getTipAmount();
+        info.getPerPersonTipAmount();
         info.getTotalBillBeforeTip();
         info.getPerPersonTotalCost();
 
